@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <title>QUIZ NR35</title>
+
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- External styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+        <!-- Quiz styles -->
+        <link rel="stylesheet" href="css/quiz.css">
+
+        <!-- External scripts -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       
+        <!-- Quiz scripts -->
+        <script src="js/configs.js"></script>
+        <script src="js/questions.js"></script>
+        <script src="js/quiz.js"></script>
+    </head>
+
+    <body class="bg-dark quiz-page">
+        <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+        <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+
+        <div class="container-fluid col-sm-9">
+            <div class="">
+                <div class="modal-content content-modal bg-dark initial-modal">
+                    <div class="modal-header">                       
+                        <!--<h3 class='col-12 modal-title text-center'><span class="label label-warning" id="qid"></span>QUIZ NR35</h3>-->
+                    </div>
+
+                    <div class="text-center">
+                        <img class="img-fluid log-nr35" src="images/NR35Min.png" alt="">
+                    </div>
+
+                    <div class="modal-body">
+                                                
+                        <div class="initial-text quiz-bold-white-content">
+                            Esteja preparado para responder as perguntas a seguir, fique tranquilo não há nada de
+                            diferente do que você estudou nesses três primeiros módulos. Vamos identificar o quanto os
+                            conteúdos foram absorvidos, lembre-se o seu conhecimento agregará no momento de
+                            executar uma atividade segura caracterizada como trabalho em altura.
+                        </div>
+
+                        <div class="initial-text quiz-bold-white-content">
+                            “Saibamos aproveitar cada segundo do nosso tempo e que possamos colocar na prática os
+                            conhecimentos que adquirimos para que possamos ser norteados a tomar as melhores
+                            decisões, com atitudes que respeitem a nossa vida”.
+                        </div>
+
+                        <br>
+
+                        <button class='element-animation1 btn btn-lg btn-light text-dark' onclick='start_quiz()'>Vamos lá!</button>
+                    </div>
+
+                    <div class="modal-footer" style="justify-content: space-between;">
+                        <a class="back-article quiz-bold-white-content link-footer" href="index.html">Voltar</a>
+                        <!--<span class="about quiz-bold-white-content link-footer">Sobre</span>-->
+                    </div>
+                </div>
+
+                <div class="modal-content bg-dark about-modal hidden">
+                    <div class="modal-header">
+                        <h3 class='col-12 modal-title text-center'><span class="label label-warning" id="qid"></span>Título do quiz</h3>
+                    </div>
+
+                    <div class="modal-body quiz-bold-white-content">
+                        DESENVOLVIMENTO <br><br>
+                        Carlo Henrique Ferreira Rodrigues<br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <span class="back quiz-bold-white-content link-footer">Voltar</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       <!-- <footer>
+            <div class="quiz-credits">
+                <div class="col-12">
+                    <div class="dev-info text-dark">
+                        <p>Designed with <span class="fas fa-heart"></span> by <a href="https://github.com/carlohfr" rel="nofollow" target="_blank">carlohfr</a></p>
+                    </div>  
+                </div>
+            </div>
+        </footer>-->
+
+        <script>
+            $('.about').click(function() {
+                $('.about-modal').toggleClass('hidden');
+                $('.initial-modal').toggleClass('hidden');
+            });
+
+            $('.back').click(function() {
+                $('.about-modal').toggleClass('hidden');
+                $('.initial-modal').toggleClass('hidden');
+            });
+        </script>
+
+    </body>
+
+</html>
